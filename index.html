@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kesen Tong · Resume & Portfolio</title>
+  <meta name="description" content="Kesen Tong — Marketing & AI, data-driven research and startups" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root { --bg:#0b1020; --panel:#0f152b; --panel2:#0d1326; --text:#e9eefc; --muted:#a6b6de; --brand:#5b8cff; --chip:#1b2342; --border:#1f2a4d; --shadow:0 8px 24px rgba(7,12,26,.35); }
+    @media (prefers-color-scheme: light){ :root { --bg:#f7f8fe; --panel:#fff; --panel2:#fff; --text:#1a2442; --muted:#546285; --brand:#2156f7; --chip:#eef2ff; --border:#e6e9f6; --shadow:0 12px 28px rgba(24,48,128,.12);} }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family: ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft Yahei",sans-serif;color:var(--text);background:radial-gradient(1200px 800px at 80% -200px, rgba(91,140,255,.15), transparent 60%),radial-gradient(800px 600px at -10% -150px, rgba(33,86,247,.18), transparent 60%),var(--bg);line-height:1.65}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{max-width:980px;width:92%;margin:48px auto}
+    .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+    .header{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:28px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid var(--border);background:#111829}
+    .title{display:flex;flex-direction:column;gap:8px}
+    h1{font-size:28px;margin:0;letter-spacing:.3px}
+    .subtitle{color:var(--muted);font-size:15px}
+    .links{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:12px;border:1px solid var(--border);background:var(--chip);font-size:14px}
+    .pillbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .pill{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--border);font-size:13px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;padding:0 28px 28px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.header{grid-template-columns:84px 1fr}.avatar{width:84px;height:84px;border-radius:12px}}
+    .section{padding:22px;border:1px solid var(--border);background:linear-gradient(180deg,color-mix(in oklab,var(--panel) 85%,transparent),color-mix(in oklab,var(--panel2) 85%,transparent));border-radius:16px}
+    .section+.section{margin-top:16px}
+    .section h2{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted);font-size:14px}
+    .timeline{display:grid;gap:14px}
+    .item{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:14px;border:1px dashed var(--border);border-radius:14px;background:color-mix(in oklab,var(--panel) 92%,transparent)}
+    .item .role{font-size:15px}
+    .item .where{color:var(--muted);font-size:14px}
+    .item .desc{grid-column:1 / -1;color:var(--muted);font-size:14px}
+    .project{display:grid;gap:10px;padding:14px;border:1px solid var(--border);border-radius:14px;background:color-mix(in oklab,var(--panel) 94%,transparent)}
+    .project h3{margin:0;font-size:16px}
+    footer{text-align:center;color:var(--muted);font-size:13px;padding:28px 0 10px}
+    @media print{body{background:#fff;color:#000}.wrap{margin:0;width:100%;max-width:none}.card,.section,.item,.project{box-shadow:none;background:#fff;border-color:#ddd}a{color:#000;text-decoration:underline}.btn{border-color:#bbb;background:#fff}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="header">
+        <img class="avatar" src="avatar.jpg" alt="Upload avatar.jpg to show a photo" onerror="this.style.opacity=.25;this.alt='Upload avatar.jpg to show a photo'" />
+        <div class="title">
+          <h1>Kesen Tong</h1>
+          <div class="subtitle">Marketing & AI · Research, Data, and Startups · Milan / Remote</div>
+          <div class="links">
+            <a class="btn" href="mailto:kesentong@gmail.com">kesentong@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/kesen" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="/resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+            <a class="btn" href="https://github.com/kesonT" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="pillbar">
+            <span class="pill">Data Mining</span><span class="pill">Machine Learning</span><span class="pill">NLP</span>
+            <span class="pill">Marketing Analytics</span><span class="pill">A/B Testing</span><span class="pill">Web Scraping</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="grid">
+        <!-- Left column -->
+        <div>
+          <section class="section">
+            <h2>Summary</h2>
+            <p class="muted">Graduate student in Marketing Management at Bocconi. Research and engineering experience across multimodal data, scraping pipelines (3.5M+ listings), and marketing analytics. Built startups and led experiments in influencer marketing and e‑commerce. Interested in digital marketing, NLP, ML, and AI‑driven decision making.</p>
+          </section>
+
+          <section class="section">
+            <h2>Selected Research Experience</h2>
+            <div class="timeline">
+              <div class="item">
+                <div class="role"><strong>Graduate Research Assistant</strong> · Marketing Dept., Università Commerciale Luigi Bocconi</div>
+                <div class="where">Milan, Italy · Jun 2025 – Dec 2025</div>
+                <div class="desc">Built large‑scale data collection pipelines (~3.5M+ listings) across Autotrader, Cars.com, and CarGurus using Apify, Bright Data, Xbyte, and ProductDataScrape; optimized proxies and data structures for scalable cost‑efficient processing. Extracted multimodal video metadata (audio/visual/text) with Librosa, OpenSMILE, OpenCV, YOLOv8, PaddleOCR, FFmpeg; constructed feature datasets (tone, pitch, motion, brightness, OCR text). Labeled 1,000+ automotive models; contributed to ML models for video/voice analytics. Labeled 7,000 Taobao product videos; experimented with Shein scraping (Selenium, undetected‑chromedriver); collected daily Google Trends for Zara/Shein/Temu/Vinted/H&M in R.</div>
+              </div>
+              <div class="item">
+                <div class="role"><strong>Graduate Research Assistant</strong> · Management & Technology Dept., Bocconi</div>
+                <div class="where">Milan, Italy · Jan 2025 – Mar 2025</div>
+                <div class="desc">Compiled structured data on 700 firms (sector, ownership, HQ, founding year, parent) to study disclosure and innovation under public pressure.</div>
+              </div>
+              <div class="item">
+                <div class="role"><strong>Undergraduate Research Assistant</strong> · School of Business, Shanghai University of Finance & Economics</div>
+                <div class="where">Shanghai, China · Jun 2022 – Dec 2024</div>
+                <div class="desc">Designed survey‑based experiment (n≈600) comparing 2D/3D/AIGC spokespersons vs. real people; preprocessing and scale validation in SPSS & Python. Ran dummy‑variable regression and moderated‑mediation (PROCESS Model 7); robustness checks showed spokesperson–product fit drives brand attraction & loyalty.</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Start‑up Experience</h2>
+            <div class="timeline">
+              <div class="item">
+                <div class="role"><strong>Cofounder</strong> · StarPath International Limited (HK) & StarPath Entertainment Inc (CO, USA)</div>
+                <div class="where">Feb 2024 – Present</div>
+                <div class="desc">Built a cross‑border TikTok agency network for North America; ran experiments with 232 creators & 43 brands, using A/B tests, segmentation, and multivariate regression to estimate effects of content format, cadence, and spokesperson traits. Built analytics infra for ROI tracking, attribution, and engagement elasticity to guide budget allocation.</div>
+              </div>
+              <div class="item">
+                <div class="role"><strong>Founder</strong> · Laiyi E‑commerce Company</div>
+                <div class="where">Zhejiang, China · Jan 2022 – Jun 2023</div>
+                <div class="desc">Operated cross‑border e‑commerce on Alibaba International & Shopee; analyzed cross‑country demand and pricing elasticity; improved ROI and reduced CAC >23% via funnel analysis and ad attribution (keyword bidding optimization).</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Publications & IP</h2>
+            <ul class="muted">
+              <li>Tong, K., Wang, K., & Wang, Z. (2023). <em>The Impact of Virtual Spokesperson Characteristics on Brand Attitudes of Generation Z Consumers: Moderation by Product Types</em>. <strong>China Business Review</strong>, 23(24). DOI: <a href="https://doi.org/10.19699/j.cnki.issn2096-0298.2023.24.098" target="_blank">10.19699/j.cnki.issn2096-0298.2023.24.098</a>.</li>
+              <li>Wang, Z., Tong, K., & Xu, Y. (2024). <em>Knowledge Inertia, Relationship Quality, and Organizational Innovation</em>. <strong>Trade Fair Economy</strong>, 24(12). DOI: <a href="https://doi.org/10.19995/j.cnki.CN10-1617/F7.2024.12.112" target="_blank">10.19995/j.cnki.CN10-1617/F7.2024.12.112</a>.</li>
+              <li>Software Copyright: <em>Volunteer Assistance Filling System V1.0 Based on Big Data</em>, No. 2023SR1162448.</li>
+              <li>Artwork Copyright: FU & XING Logo Designs, No. 2022‑F‑10077290 & 2022‑F‑10077291.</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- Right column -->
+        <div>
+          <section class="section">
+            <h2>Education</h2>
+            <div class="timeline">
+              <div class="item">
+                <div class="role"><strong>M.Sc., Marketing Management</strong> · Università Bocconi</div>
+                <div class="where">Milan, Italy · Sep 2024 – Expected Aug 2026 · GPA: 26/30</div>
+                <div class="desc">Coursework: Data Mining, Machine Learning, Predictive & Generative AI, NLP. Research interests: Digital Marketing, NLP, ML/AI, Startups.</div>
+              </div>
+              <div class="item">
+                <div class="role"><strong>Bachelor in Management</strong> · Shanghai University of Finance & Economics (Zhejiang College)</div>
+                <div class="where">China · Sep 2019 – Jun 2023 · GPA: 88.06/100 · Rank 1/135</div>
+                <div class="desc">Valedictorian (only 1); National Scholarship (No.1); National Encouragement Scholarship; featured by China Blue News & Jinhua News.</div>
+              </div>
+              <div class="item">
+                <div class="role"><strong>Major in Sci & Tech Innovation and Entrepreneurship</strong> · SUFE</div>
+                <div class="where">Shanghai, China · Sep 2022 – Jan 2023</div>
+                <div class="desc">Topics: Metaverse, Product Launch, Market Introduction, Blockchain, VC. Awards: China International Gold Medal; National First Prize (Internet+ & E‑commerce).</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Leadership & Teamwork</h2>
+            <ul class="muted">
+              <li>Regional Ambassador · CRI Study Organization — managed club activities across 5 universities (10,000+ students), Sep 2022 – Jun 2023.</li>
+              <li>Chairman · Youth League Committee — managed 300+ members and reported 1,000+ student activities, Sep 2021 – Jun 2022.</li>
+              <li>Campus Ambassador · LinkedIn China — hosted job‑seeking events (~400 participants each), Sep 2020 – Jun 2021.</li>
+              <li>Founder · HQT Education Club — organized three volunteer‑teaching trips to rural primary schools, Jun 2019 – Jun 2021.</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>Projects</h2>
+            <div class="project">
+              <h3>Smart Helmet Project — Team Lead</h3>
+              <p class="muted">Mar 2021 – Dec 2022. Built multimodal pipelines (video, audio, physiological, location). Applied CNN‑RNN and transformer models for predictive safety analytics and anomaly detection; explored biometric–context links.</p>
+            </div>
+            <div class="project">
+              <h3>KOAZY Brand — Co‑Founder</h3>
+              <p class="muted">Nov 2022 – Present. Brand with ~100k subscribers across Taobao, Xiaohongshu, and JD.com. Ran A/B tests, cohort analysis, and promotion modeling to optimize campaign effectiveness.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Skills & Others</h2>
+            <ul class="muted">
+              <li><strong>Programming / Tools:</strong> Python, R, SQL, Stata, SPSS, AMOS, Julia, PyTorch, JAGS, Qualtrics, LaTeX, Git, Premiere, After Effects, Stable Diffusion.</li>
+              <li><strong>GRE:</strong> V164, Q170.</li>
+              <li><strong>Interests:</strong> Sky‑diving, Scuba‑diving, Surfing, Road‑bicycle, Skiing, Basketball, Badminton, Table tennis, Workout, Guitar, Piano, Rock, Videography.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Kesen Tong · Hosted on GitHub Pages.</footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
